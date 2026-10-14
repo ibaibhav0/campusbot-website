@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology &amp; Architecture | CAMPUSBOT — Autonomous Rover Engineering</title>
+  <meta name="description" content="Explore CAMPUSBOT's 3-Tier physical AI architecture: 15 FPS OpenCV line centroid tracker, 4× ultrasonic Time-to-Collision safety, ArUco junction tags, and dual solenoid OTP vault.">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="style.css?v=3.0">
+</head>
+<body>
+
+  <!-- ═══════ NAVBAR ═══════ -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="CAMPUSBOT Home">
+        <div class="brand-symbol">
+          <img src="assets/logo.png" alt="CAMPUSBOT Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">CAMPUSBOT</span>
+          <span class="brand-sub">Autonomous Robotics</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="nav-dropdown-item">
+            <a href="industries.html" class="nav-dropdown-toggle">
+              Industries We Serve
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+            </a>
+            <div class="nav-submenu">
+              <a href="industries.html?industry=colleges">Colleges &amp; Universities</a>
+              <a href="industries.html?industry=healthcare">Healthcare</a>
+              <a href="industries.html?industry=industrial">Large Industrial Campuses</a>
+              <a href="industries.html?industry=parcel">Parcel Delivery</a>
+            </div>
+          </li>
+          <li><a href="technology.html" class="active">Technology</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="track.html">Track Order</a></li>
+          <li><a href="buy.html">Buy Now</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+        <a href="buy.html" class="btn btn-primary btn-nav">Buy CAMPUSBOT</a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════ PAGE HERO ═══════ -->
+  <section class="page-hero-section">
+    <div class="container page-hero-content">
+      <span class="section-tag-pill">Hardware &amp; Software Layer</span>
+      <h1 class="page-hero-title">Autonomous Perception &amp; Actuation</h1>
+      <p class="page-hero-lead">
+        A deterministic, fail-safe 3-Tier architecture engineered to deliver packages autonomously without relying on expensive GPS or external telecom networks.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════ CAPABILITIES GRID ═══════ -->
+  <section class="content-section" style="padding: 70px 0 50px;">
+    <div class="container">
+      <div class="section-header-centered">
+        <span class="section-tag-pill">Field-Validated Systems</span>
+        <h2 class="section-headline">Real Verified Hardware Capabilities</h2>
+        <p class="section-subheadline">Every capability is built directly into each ₹24,999 rover unit with zero cloud subscription fees.</p>
+      </div>
+
+      <div class="capabilities-grid">
+        <div class="capability-card">
+          <div class="cap-num">01</div>
+          <div class="cap-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/></svg>
+          </div>
+          <h3 class="cap-title">Picamera2 Line Centroid Tracker</h3>
+          <p class="cap-desc">Processes ground visual feed at 15 FPS via OpenCV. Isolates paved pathway guidelines and continuously computes steering error offset in real time.</p>
+          <div class="cap-metric-pill">15 FPS Real-Time OpenCV Loop</div>
+        </div>
+
+        <div class="capability-card">
+          <div class="cap-num">02</div>
+          <div class="cap-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="cap-title">4× Ultrasonic Array (TTC &lt; 0.5s)</h3>
+          <p class="cap-desc">Surround-mounted HC-SR04 sonar sensors calculating dynamic Time-to-Collision against pedestrians, cyclists, and campus pets with automated emergency braking.</p>
+          <div class="cap-metric-pill">&lt; 0.5s Collision Response</div>
+        </div>
+
+        <div class="capability-card">
+          <div class="cap-num">03</div>
+          <div class="cap-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><rect x="7" y="7" width="3" height="3"/><rect x="14" y="7" width="3" height="3"/><rect x="7" y="14" width="3" height="3"/></svg>
+          </div>
+          <h3 class="cap-title">ArUco Marker Junction Localization</h3>
+          <p class="cap-desc">Optical tag localization positioned at hostel path bifurcations and gate checkpoints. Triggers deterministic turns and designated delivery stops.</p>
+          <div class="cap-metric-pill">99.4% Marker Identification</div>
+        </div>
+
+        <div class="capability-card">
+          <div class="cap-num">04</div>
+          <div class="cap-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3 class="cap-title">Dual Solenoid OTP Cargo Vault</h3>
+          <p class="cap-desc">Heavy-duty 12V electromagnetic solenoids keeping student parcels secured in transit. Unlocks only upon matching one-time cryptographic PIN entered on rover.</p>
+          <div class="cap-metric-pill">Zero Cargo Theft Record</div>
+        </div>
+
+        <div class="capability-card">
+          <div class="cap-num">05</div>
+          <div class="cap-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+          </div>
+          <h3 class="cap-title">Hardware E-Stop Switch</h3>
+          <p class="cap-desc">Direct high-visibility physical safety mushroom button that cuts power to the L298N motor drivers instantaneously for strict campus pedestrian safety compliance.</p>
+          <div class="cap-metric-pill">Instant Hardware Power Kill</div>
+        </div>
+
+        <div class="capability-card">
+          <div class="cap-num">06</div>
+          <div class="cap-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3 class="cap-title">12V Li-ion Regulated Power Bus</h3>
+          <p class="cap-desc">Independent power regulation powering Raspberry Pi 3 compute via step-down buck converter and direct 12V high-torque motor propulsion with 6+ hours of operation.</p>
+          <div class="cap-metric-pill">6+ Hours Continuous Transit</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ THE 3-TIER ARCHITECTURE ═══════ -->
+  <section class="content-section" style="padding: 70px 0; background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header-centered">
+        <span class="section-tag-pill">Systems Architecture</span>
+        <h2 class="section-headline">The 3-Tier Hardware &amp; Firmware Stack</h2>
+        <p class="section-subheadline">Engineered for clean modular replacement, rapid diagnostics, and 24/7 reliability.</p>
+      </div>
+
+      <div class="core-tiers-wrapper">
+        <div class="core-tier-row">
+          <div class="tier-badge-col">
+            <span class="tier-num">TIER 1</span>
+            <strong>PERCEPTION &amp; SENSING</strong>
+          </div>
+          <div class="tier-content-col">
+            <div class="tier-items-grid">
+              <div class="tier-item">
+                <strong>Raspberry Pi Camera v2</strong>
+                <p>Wide dynamic range optical sensor calibrated for outdoor bright sun and dusk.</p>
+              </div>
+              <div class="tier-item">
+                <strong>4× HC-SR04 Sonar Pods</strong>
+                <p>Quadrature ultrasonic ranging delivering Time-to-Collision avoidance.</p>
+              </div>
+              <div class="tier-item">
+                <strong>ArUco Marker Detector</strong>
+                <p>Sub-millimeter optical fiducial registration for junction routing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="core-tier-row">
+          <div class="tier-badge-col">
+            <span class="tier-num">TIER 2</span>
+            <strong>COMPUTE &amp; DECISION</strong>
+          </div>
+          <div class="tier-content-col">
+            <div class="tier-items-grid">
+              <div class="tier-item">
+                <strong>Raspberry Pi 3 Compute Core</strong>
+                <p>64-bit quad-core ARM processor executing image processing and navigation logic locally on Raspberry Pi 3.</p>
+              </div>
+              <div class="tier-item">
+                <strong>Predictive PID Controller</strong>
+                <p>Proportional, integral, and derivative steering calculation in real time.</p>
+              </div>
+              <div class="tier-item">
+                <strong>State Machine Driver</strong>
+                <p>Deterministic delivery state machine governing all lock and motor events.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="core-tier-row">
+          <div class="tier-badge-col">
+            <span class="tier-num">TIER 3</span>
+            <strong>ACTUATION &amp; POWER</strong>
+          </div>
+          <div class="tier-content-col">
+            <div class="tier-items-grid">
+              <div class="tier-item">
+                <strong>Differential DC Drive + L298N</strong>
+                <p>Dual high-torque geared DC motors with L298N dual H-bridge driver.</p>
+              </div>
+              <div class="tier-item">
+                <strong>Solenoid Compartment Lock</strong>
+                <p>12V high-tensile latch unlocked solely upon valid cryptographic OTP.</p>
+              </div>
+              <div class="tier-item">
+                <strong>12V Li-ion Battery &amp; Buck Converter</strong>
+                <p>Clean regulated 12V motor supply and stepped-down 5V compute power.</p>
+              </div>
+              <div class="tier-item">
+                <strong>Physical E-Stop Switch</strong>
+                <p>Hardware-level motor power kill switch for instant pedestrian safety.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 50px;">
+        <a href="buy.html" class="btn btn-primary btn-xl">Purchase CAMPUSBOT Units (₹24,999)</a>
+        <a href="contact.html" class="btn btn-secondary btn-xl" style="margin-left: 14px;">Schedule On-Campus Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo footer-logo">
+            <div class="brand-symbol">
+              <img src="assets/logo.png" alt="CAMPUSBOT Logo" class="brand-logo-img">
+            </div>
+            <span class="brand-name">CAMPUSBOT</span>
+          </a>
+          <p class="footer-bio">
+            CAMPUSBOT autonomous mobile delivery rovers engineered at Nitte Meenakshi Institute of Technology (NMIT), Bengaluru. Empowering higher education campuses with secure gate-to-hostel parcel logistics.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="industries.html">Industries We Serve</a></li>
+            <li><a href="technology.html">Technology &amp; Vision</a></li>
+            <li><a href="about.html">About Leadership Team</a></li>
+            <li><a href="track.html">Track Existing Order</a></li>
+            <li><a href="buy.html">Institutional Procurement</a></li>
+            <li><a href="contact.html">Campus HQ Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Contact Operations</h4>
+          <ul class="footer-links-list">
+            <li><a href="tel:+917411054974">+91 7411054974</a></li>
+            <li><a href="mailto:akashsaud22@gmail.com">akashsaud22@gmail.com</a></li>
+            <li><a href="mailto:ibaibhavkumar8467@gmail.com">ibaibhavkumar8467@gmail.com</a></li>
+            <li><span>NMIT Campus, Yelahanka, Bengaluru - 560064</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 CAMPUSBOT — Technology &amp; Architecture. All Rights Reserved.</span>
+        <span>Flat ₹24,999 / Rover Unit • ₹2,000 / Docking Fast Charger</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=3.0"></script>
+</body>
+</html>

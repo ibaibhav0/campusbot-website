@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy CAMPUSBOT &amp; Chargers | Institutional Procurement Portal</title>
+  <meta name="description" content="Procure CAMPUSBOT autonomous delivery rovers and fast-charging docks. ₹24,999 per rover, ₹2,000 per charger dock. Buy together or standalone.">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="style.css?v=3.0">
+</head>
+<body>
+
+  <!-- ═══════ NAVBAR ═══════ -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="CAMPUSBOT Home">
+        <div class="brand-symbol">
+          <img src="assets/logo.png" alt="CAMPUSBOT Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">CAMPUSBOT</span>
+          <span class="brand-sub">Autonomous Robotics</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="nav-dropdown-item">
+            <a href="industries.html" class="nav-dropdown-toggle">
+              Industries We Serve
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+            </a>
+            <div class="nav-submenu">
+              <a href="industries.html?industry=colleges">Colleges &amp; Universities</a>
+              <a href="industries.html?industry=healthcare">Healthcare</a>
+              <a href="industries.html?industry=industrial">Large Industrial Campuses</a>
+              <a href="industries.html?industry=parcel">Parcel Delivery</a>
+            </div>
+          </li>
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="track.html">Track Order</a></li>
+          <li><a href="buy.html" class="active">Buy Now</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+        <a href="buy.html" class="btn btn-primary btn-nav">Buy CAMPUSBOT</a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════ PAGE HERO ═══════ -->
+  <section class="page-hero-section">
+    <div class="container page-hero-content">
+      <span class="section-tag-pill">Procurement Gateway</span>
+      <h1 class="page-hero-title">Order CAMPUSBOT &amp; Fast-Charging Docks</h1>
+      <p class="page-hero-lead">
+        Purchase autonomous delivery rovers (₹24,999/unit) or standalone fast-charging docks (₹2,000/unit), or combine both. Instant checkout via UPI QR, Cards, or Foreign Wire Grants.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════ MAIN PROCUREMENT CONTAINER ═══════ -->
+  <div class="container" style="padding-bottom: 80px; margin-top: 20px;">
+    <div class="procure-layout-grid">
+
+      <!-- LEFT: Configuration & Order Form -->
+      <div class="procure-calculator-card">
+        <div class="calc-header">
+          <div>
+            <span class="calc-sub">FLEXIBLE PROCUREMENT</span>
+            <div class="calc-price-row">
+              <span class="calc-curr">₹</span>
+              <span class="calc-amt" id="headerUnitRate">24,999</span>
+              <span class="calc-unit">/ unit base rate</span>
+            </div>
+          </div>
+          <div class="calc-badge">&#10003; Direct Institutional Dispatch</div>
+        </div>
+
+        <div class="calc-body">
+          <!-- Quick Filter Selector (Both / Rover Only / Charger Only) -->
+          <div>
+            <label style="display: block; font-family: var(--font-heading); font-size: 0.85rem; font-weight: 700; color: var(--text); margin-bottom: 8px;">
+              Select What You Would Like to Buy:
+            </label>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <button type="button" class="btn btn-secondary btn-nav" id="btnModeBoth" style="background: #EFF6FF; border-color: var(--primary); color: var(--primary); font-weight: 800;">
+                Rovers + Fast Chargers
+              </button>
+              <button type="button" class="btn btn-secondary btn-nav" id="btnModeRoversOnly">
+                Rovers Only (₹24,999)
+              </button>
+              <button type="button" class="btn btn-secondary btn-nav" id="btnModeChargersOnly">
+                Fast Chargers Only (₹2,000)
+              </button>
+            </div>
+          </div>
+
+          <!-- Rover Units Stepper -->
+          <div class="calc-field" id="roverFieldRow">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <label for="fleetQuantity" style="margin-bottom: 0;">
+                CAMPUSBOT Delivery Rovers (₹24,999 each):
+              </label>
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--primary);">Turnkey Hardware + OS</span>
+            </div>
+            <div class="quantity-stepper">
+              <button type="button" class="btn-qty" id="qtyMinus" aria-label="Decrease rovers">−</button>
+              <input type="number" id="fleetQuantity" min="0" max="25" value="1" readonly>
+              <button type="button" class="btn-qty" id="qtyPlus" aria-label="Increase rovers">+</button>
+            </div>
+          </div>
+
+          <!-- Fast Charger Option Card & Stepper -->
+          <div class="addon-hardware-card" id="chargerFieldRow">
+            <div class="addon-info">
+              <div class="addon-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <div class="addon-text">
+                <h4>12V 5A Smart Fast-Charger Dock</h4>
+                <p>Buy standalone or bundled with rovers. Auto-shutoff &amp; dual-pole connector.</p>
+                <span class="addon-price-tag">₹2,000 INR per charger unit</span>
+              </div>
+            </div>
+            <div class="quantity-stepper" style="max-width: 140px;">
+              <button type="button" class="btn-qty" id="chargerMinus" aria-label="Decrease chargers">−</button>
+              <input type="number" id="chargerQuantity" min="0" max="25" value="1" readonly>
+              <button type="button" class="btn-qty" id="chargerPlus" aria-label="Increase chargers">+</button>
+            </div>
+          </div>
+
+          <!-- Livery Finish (Visible when rovers > 0) -->
+          <div class="calc-field" id="liveryPickerGroup">
+            <label>Select Institutional Livery Colorway (for Rovers):</label>
+            <div class="livery-picker">
+              <label class="livery-radio">
+                <input type="radio" name="orderColor" value="Campus Orange & White" checked>
+                <span class="livery-pill">Campus Orange</span>
+              </label>
+              <label class="livery-radio">
+                <input type="radio" name="orderColor" value="Electric Blue & Slate">
+                <span class="livery-pill">Cobalt Blue</span>
+              </label>
+              <label class="livery-radio">
+                <input type="radio" name="orderColor" value="University Crimson">
+                <span class="livery-pill">Uni Crimson</span>
+              </label>
+              <label class="livery-radio">
+                <input type="radio" name="orderColor" value="Campus Emerald">
+                <span class="livery-pill">Emerald Green</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Live Breakdown Box -->
+          <div class="order-breakdown-box">
+            <div class="order-line" id="lineRoverBreakdown">
+              <span>CAMPUSBOT Rover Unit(s)</span>
+              <span>₹24,999 × <strong id="summaryQty">1</strong> = <strong id="summaryRoversTotal">₹24,999</strong></span>
+            </div>
+            <div class="order-line" id="lineChargerBreakdown">
+              <span>12V Docking Fast Chargers</span>
+              <span>₹2,000 × <strong id="summaryChargerQty">1</strong> = <strong id="summaryChargersTotal">₹2,000</strong></span>
+            </div>
+            <div class="order-line">
+              <span>Gate Hub Kit &amp; ArUco Markers</span>
+              <span class="text-success">INCLUDED</span>
+            </div>
+            <div class="order-line total-line">
+              <span>Total Procurement Payable</span>
+              <span class="total-highlight" id="totalOrderPrice">₹26,999</span>
+            </div>
+          </div>
+
+          <!-- Institutional Order Form -->
+          <form class="procurement-form" id="procurementForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="collegeName">College / University / Facility Name <span class="req">*</span></label>
+                <input type="text" id="collegeName" name="collegeName" placeholder="e.g. Nitte Meenakshi Institute of Technology" required>
+              </div>
+              <div class="form-group">
+                <label for="officerName">Contact Person &amp; Designation <span class="req">*</span></label>
+                <input type="text" id="officerName" name="officerName" placeholder="e.g. Prof. R. Sharma (Head of Robotics Lab)" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="procurePhone">Official Contact Phone <span class="req">*</span></label>
+                <input type="tel" id="procurePhone" name="procurePhone" placeholder="+91 98765 43210" required>
+              </div>
+              <div class="form-group">
+                <label for="procureEmail">Official Email Address <span class="req">*</span></label>
+                <input type="email" id="procureEmail" name="procureEmail" placeholder="dean.procurement@college.edu.in" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="shippingAddress">Campus Delivery Address &amp; Gate PIN Code <span class="req">*</span></label>
+              <textarea id="shippingAddress" name="shippingAddress" rows="2" placeholder="Full campus address for heavy rover / charger freight consignment" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="utrNumber">Transaction Reference / UTR / Card Auth Code <span class="req">*</span></label>
+              <input type="text" id="utrNumber" name="utrNumber" placeholder="UPI 12-digit UTR, Card Auth Code, or Wire Transfer Ref" required>
+              <small class="utr-hint">Select your payment method on the right, complete the transfer, then paste your transaction reference here.</small>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-xl btn-full" id="btnSubmitOrder">
+              Submit Procurement Order &amp; Generate PO
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- RIGHT: Payment Methods (UPI QR, Cards, Foreign Grants) -->
+      <div class="procure-qr-card">
+        <div class="payment-tabs-bar">
+          <button type="button" class="pay-tab-btn active" data-tab="upi">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            UPI QR Code
+          </button>
+          <button type="button" class="pay-tab-btn" data-tab="cards">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+            Cards
+          </button>
+          <button type="button" class="pay-tab-btn" data-tab="foreign">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            Foreign Grants
+          </button>
+        </div>
+
+        <!-- PANEL 1: UPI QR -->
+        <div class="payment-panel active" id="panelUpi">
+          <div class="qr-card-header">
+            <span class="qr-tag">INSTANT CLEARANCE</span>
+            <h3>Scan &amp; Pay via UPI</h3>
+            <p>Scan using Google Pay, PhonePe, Paytm, BHIM, or any mobile banking app.</p>
+          </div>
+
+          <div class="qr-image-wrapper">
+            <div class="qr-frame">
+              <img src="assets/payment-qr.jpg" alt="Official CAMPUSBOT UPI Payment QR" class="payment-qr-img">
+            </div>
+            <div class="qr-payable-badge">
+              <span>Payable Total:</span>
+              <strong id="qrPayableAmount">₹26,999</strong>
+            </div>
+          </div>
+
+          <div class="qr-instructions-list">
+            <div class="qr-step-row">
+              <span class="qr-step-num">1</span>
+              <span>Open Google Pay, PhonePe, or Paytm and scan the QR code above.</span>
+            </div>
+            <div class="qr-step-row">
+              <span class="qr-step-num">2</span>
+              <span>Transfer the exact payable amount (<strong id="qrStepAmount">₹26,999</strong>).</span>
+            </div>
+            <div class="qr-step-row">
+              <span class="qr-step-num">3</span>
+              <span>Copy the 12-digit <strong>UPI Reference / UTR Number</strong> from your payment receipt.</span>
+            </div>
+            <div class="qr-step-row">
+              <span class="qr-step-num">4</span>
+              <span>Paste it into the form on the left and submit your order.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 2: Credit & Debit Cards -->
+        <div class="payment-panel" id="panelCards">
+          <div class="qr-card-header">
+            <span class="qr-tag">SECURE 256-BIT ENCRYPTED</span>
+            <h3>Credit &amp; Debit Card Payment</h3>
+            <p>Visa, MasterCard, RuPay, and American Express accepted for corporate and institutional cards.</p>
+          </div>
+
+          <div class="card-logos-row">
+            <span class="card-badge">VISA</span>
+            <span class="card-badge">Mastercard</span>
+            <span class="card-badge">RuPay</span>
+            <span class="card-badge">Amex</span>
+          </div>
+
+          <div style="background: #F8FAFC; border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 22px;">
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label for="cardholderName" style="font-size: 0.8rem; color: var(--text); font-weight: 700; margin-bottom: 6px; display: block;">Cardholder Name</label>
+              <input type="text" id="cardholderName" placeholder="Name as displayed on card" style="width: 100%; padding: 12px; background: #FFFFFF; border: 1.5px solid var(--border); border-radius: 6px; color: var(--text); font-size: 0.9rem;">
+            </div>
+
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label for="cardNumber" style="font-size: 0.8rem; color: var(--text); font-weight: 700; margin-bottom: 6px; display: block;">Card Number (16 Digits)</label>
+              <input type="text" id="cardNumber" maxlength="19" placeholder="4123 •••• •••• 9012" style="width: 100%; padding: 12px; background: #FFFFFF; border: 1.5px solid var(--border); border-radius: 6px; color: var(--text); font-family: var(--font-mono); font-size: 0.95rem;">
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+              <div class="form-group">
+                <label for="cardExpiry" style="font-size: 0.8rem; color: var(--text); font-weight: 700; margin-bottom: 6px; display: block;">Expiry Date</label>
+                <input type="text" id="cardExpiry" maxlength="5" placeholder="MM/YY" style="width: 100%; padding: 12px; background: #FFFFFF; border: 1.5px solid var(--border); border-radius: 6px; color: var(--text); font-family: var(--font-mono); font-size: 0.95rem;">
+              </div>
+              <div class="form-group">
+                <label for="cardCvv" style="font-size: 0.8rem; color: var(--text); font-weight: 700; margin-bottom: 6px; display: block;">CVV / CVC</label>
+                <input type="password" id="cardCvv" maxlength="4" placeholder="•••" style="width: 100%; padding: 12px; background: #FFFFFF; border: 1.5px solid var(--border); border-radius: 6px; color: var(--text); font-family: var(--font-mono); font-size: 0.95rem;">
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-full" id="btnSimulateCardPay" style="margin-top: 18px;">
+              Authorize &amp; Attach Card Ref (<span id="cardPayableAmt">₹26,999</span>)
+            </button>
+          </div>
+
+          <div class="card-security-strip">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            <span>PCI-DSS Level 1 Secure Gate • Instant 3D Secure Authorization</span>
+          </div>
+        </div>
+
+        <!-- PANEL 3: Foreign Grants & Global SWIFT Wire -->
+        <div class="payment-panel" id="panelForeign">
+          <div class="qr-card-header">
+            <span class="qr-tag">INTERNATIONAL ACADEMIC WIRE</span>
+            <h3>Global Funding &amp; Foreign Grants</h3>
+            <p>For international research universities, IEEE laboratories, and overseas research grant wire transfers.</p>
+          </div>
+
+          <div class="foreign-funding-box">
+            <div class="foreign-currency-display">
+              <div>
+                <span style="font-size: 0.75rem; color: var(--muted); display: block;">ESTIMATED USD CONVERSION</span>
+                <strong style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--primary);" id="dispUsdTotal">$324 USD</strong>
+              </div>
+              <span style="font-size: 0.78rem; color: var(--muted); text-align: right;">Fixed at ₹83.33 / $1 USD</span>
+            </div>
+
+            <table class="swift-wire-table">
+              <tbody>
+                <tr>
+                  <td>Beneficiary Account:</td>
+                  <td>CAMPUSBOT Robotics Systems Initiative</td>
+                </tr>
+                <tr>
+                  <td>Bank Name:</td>
+                  <td>State Bank of India (SBI)</td>
+                </tr>
+                <tr>
+                  <td>Branch / Campus:</td>
+                  <td>NMIT Campus Branch, Yelahanka, Bengaluru</td>
+                </tr>
+                <tr>
+                  <td>SWIFT / BIC Code:</td>
+                  <td>SBININBB492</td>
+                </tr>
+                <tr>
+                  <td>Account Currency:</td>
+                  <td>INR / Multi-Currency Inward (USD, EUR, GBP)</td>
+                </tr>
+                <tr>
+                  <td>Purpose Code:</td>
+                  <td>P1007 (Higher Education Robotic Equipment)</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div style="font-size: 0.8rem; color: var(--muted); line-height: 1.5; padding: 12px; background: #FFFFFF; border: 1px solid var(--border); border-radius: 6px;">
+              <strong>International Institutions Notice:</strong> After dispatching wire transfer through your treasury, paste your SWIFT MT103 reference into the UTR field. An official Foreign Inward Remittance Certificate (FIRC) will be issued.
+            </div>
+          </div>
+        </div>
+
+        <div class="qr-security-note" style="margin-top: 20px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>Official Institutional Account • Verified NMIT Robotics Lab Deployment</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══════ PO SUCCESS MODAL ═══════ -->
+  <div class="order-modal-backdrop" id="orderModal">
+    <div class="order-modal-box">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">&times;</button>
+      <div class="modal-status-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h3 class="modal-title">Procurement Order Confirmed</h3>
+      <p class="modal-lead">Your institutional order has been logged into the CAMPUSBOT manufacturing queue.</p>
+
+      <div class="modal-po-card">
+        <div class="po-row">
+          <span>Purchase Order Reference:</span>
+          <strong class="po-highlight" id="modalPoRef">CB-PO-NMIT-01</strong>
+        </div>
+        <div class="po-row">
+          <span>Institution Name:</span>
+          <strong id="modalCollegeName">Nitte Meenakshi Institute of Technology</strong>
+        </div>
+        <div class="po-row">
+          <span>Total Order:</span>
+          <strong id="modalUnits">1 Rover + 1 Fast Charger (₹26,999)</strong>
+        </div>
+        <div class="po-row">
+          <span>Selected Livery:</span>
+          <strong id="modalLivery">Campus Orange &amp; White</strong>
+        </div>
+        <div class="po-row">
+          <span>Payment Ref / UTR:</span>
+          <strong id="modalUtr">429183921049</strong>
+        </div>
+      </div>
+
+      <div class="modal-contact-reminder">
+        Our engineering team will call you at <strong id="modalContactPhone">+91 7411054974</strong> within 24 hours to schedule freight delivery and on-campus waypoint mapping.
+      </div>
+
+      <div style="display: flex; gap: 12px; margin-top: 18px;">
+        <a href="track.html" class="btn btn-primary btn-full" id="btnTrackNewOrder">Track Order Live</a>
+        <button type="button" class="btn btn-secondary btn-full" id="btnModalAcknowledge">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo footer-logo">
+            <div class="brand-symbol">
+              <img src="assets/logo.png" alt="CAMPUSBOT Logo" class="brand-logo-img">
+            </div>
+            <span class="brand-name">CAMPUSBOT</span>
+          </a>
+          <p class="footer-bio">
+            CAMPUSBOT autonomous mobile delivery rovers engineered at Nitte Meenakshi Institute of Technology (NMIT), Bengaluru. Empowering higher education campuses with secure gate-to-hostel parcel logistics.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="industries.html">Industries We Serve</a></li>
+            <li><a href="technology.html">Technology &amp; Vision</a></li>
+            <li><a href="about.html">About Leadership Team</a></li>
+            <li><a href="track.html">Track Existing Order</a></li>
+            <li><a href="buy.html">Institutional Procurement</a></li>
+            <li><a href="contact.html">Campus HQ Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Contact Operations</h4>
+          <ul class="footer-links-list">
+            <li><a href="tel:+917411054974">+91 7411054974</a></li>
+            <li><a href="mailto:akashsaud22@gmail.com">akashsaud22@gmail.com</a></li>
+            <li><a href="mailto:ibaibhavkumar8467@gmail.com">ibaibhavkumar8467@gmail.com</a></li>
+            <li><span>NMIT Campus, Yelahanka, Bengaluru - 560064</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 CAMPUSBOT — Direct Institutional Sales Portal. All Rights Reserved.</span>
+        <span>Flat ₹24,999 / Rover Unit • ₹2,000 / Docking Fast Charger (Sold Alone or Bundled)</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=3.0"></script>
+</body>
+</html>

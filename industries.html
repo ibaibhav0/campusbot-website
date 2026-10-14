@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industries We Serve | CAMPUSBOT — Autonomous Campus &amp; Facility Logistics</title>
+  <meta name="description" content="Explore how CAMPUSBOT autonomous rovers transform logistics in Colleges &amp; Universities, Healthcare facilities, Large Industrial Campuses, and Last-Mile Parcel Delivery hubs.">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="style.css?v=3.0">
+</head>
+<body>
+
+  <!-- ═══════ NAVBAR ═══════ -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="CAMPUSBOT Home">
+        <div class="brand-symbol">
+          <img src="assets/logo.png" alt="CAMPUSBOT Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">CAMPUSBOT</span>
+          <span class="brand-sub">Autonomous Robotics</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="nav-dropdown-item">
+            <a href="industries.html" class="active nav-dropdown-toggle">
+              Industries We Serve
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+            </a>
+            <div class="nav-submenu">
+              <a href="industries.html?industry=colleges">Colleges &amp; Universities</a>
+              <a href="industries.html?industry=healthcare">Healthcare</a>
+              <a href="industries.html?industry=industrial">Large Industrial Campuses</a>
+              <a href="industries.html?industry=parcel">Parcel Delivery</a>
+            </div>
+          </li>
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="track.html">Track Order</a></li>
+          <li><a href="buy.html">Buy Now</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+        <a href="buy.html" class="btn btn-primary btn-nav">Buy CAMPUSBOT</a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════ PAGE HERO ═══════ -->
+  <section class="page-hero-section">
+    <div class="container page-hero-content">
+      <span class="section-tag-pill">Application Sectors</span>
+      <h1 class="page-hero-title">Industries We Serve</h1>
+      <p class="page-hero-lead">
+        CAMPUSBOT's ₹24,999 autonomous rovers solve critical last-mile movement across educational institutions, hospital networks, large manufacturing bays, and logistics consolidation hubs.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════ SECTOR SELECTION TABS ═══════ -->
+  <div class="container" style="margin-top: -20px; margin-bottom: 40px;">
+    <div class="industry-nav-pills-row" id="industryNavPills">
+      <button type="button" class="industry-nav-pill active" data-target="colleges">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        <span>Colleges &amp; Universities</span>
+      </button>
+      <button type="button" class="industry-nav-pill" data-target="healthcare">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        <span>Healthcare</span>
+      </button>
+      <button type="button" class="industry-nav-pill" data-target="industrial">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        <span>Large Industrial Campuses</span>
+      </button>
+      <button type="button" class="industry-nav-pill" data-target="parcel">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+        <span>Parcel Delivery</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ═══════ INDUSTRY DEEP DIVE PANELS ═══════ -->
+  <div class="container" style="padding-bottom: 80px;">
+
+    <!-- PANEL 1: COLLEGES & UNIVERSITIES -->
+    <article class="industry-detail-card active" id="sec-colleges">
+      <div class="ind-card-header">
+        <div class="ind-badge-wrap">
+          <span class="ind-pill-tag">Flagship Solution</span>
+          <h2>Colleges &amp; Universities</h2>
+        </div>
+        <span class="ind-stat-badge">200+ Daily Gate Parcels • 20–30 min Walk Eliminated</span>
+      </div>
+
+      <div class="ind-grid-layout">
+        <div class="ind-content-col">
+          <div class="ind-block">
+            <h3 class="ind-subhead">
+              <span class="ind-icon-num">!</span>
+              The Problem on Modern Higher Education Campuses
+            </h3>
+            <p>
+              In large engineering, medical, and liberal arts universities, over <strong>200+ courier parcels arrive at the main security gate every single day</strong> from Amazon, Flipkart, BlueDart, and Delhivery.
+            </p>
+            <p>
+              Security regulations rightfully prohibit external delivery riders from driving into student hostel clusters. As a result, students must walk <strong>400–800 meters (20 to 30 minutes round-trip)</strong> multiple times a week just to retrieve small packages, missing study sessions and enduring heat or monsoon rains. Security desks become cluttered sorting dumping grounds where parcels frequently get damaged or misplaced.
+            </p>
+          </div>
+
+          <div class="ind-block">
+            <h3 class="ind-subhead">
+              <span class="ind-icon-num">&#10003;</span>
+              How CAMPUSBOT Solves This Completely
+            </h3>
+            <ul class="ind-step-list">
+              <li>
+                <strong>1. Secure Gate Intake:</strong> The delivery courier arrives at Gate 1, authenticates with a simple 4-digit drop PIN on CampusBot's touchscreen, and places the parcel inside the cargo chamber.
+              </li>
+              <li>
+                <strong>2. Dual-Solenoid Vault Lock:</strong> High-tensile 12V electromagnetic solenoids latch immediately, preventing unauthorized opening in transit.
+              </li>
+              <li>
+                <strong>3. OpenCV Ground Navigation:</strong> The rover captures the paved pedestrian pathway at 15 FPS using Picamera2 and OpenCV, tracking the centroid line with predictive PID steering.
+              </li>
+              <li>
+                <strong>4. ArUco Junction Routing:</strong> At campus bifurcations, optical markers instruct the rover whether to steer towards Boys Hostel Block A/B or Girls Hostel Station.
+              </li>
+              <li>
+                <strong>5. Student OTP Pickup:</strong> The student receives an SMS with their unique pickup PIN, walks 30 seconds to the ground-floor hostel station, enters their PIN, and collects their parcel.
+              </li>
+            </ul>
+          </div>
+
+          <div class="ind-metrics-row">
+            <div class="ind-metric-card">
+              <span class="m-val">100%</span>
+              <span class="m-lbl">Hostel Perimeter Security</span>
+            </div>
+            <div class="ind-metric-card">
+              <span class="m-val">25 min</span>
+              <span class="m-lbl">Walk Time Saved / Delivery</span>
+            </div>
+            <div class="ind-metric-card">
+              <span class="m-val">₹24,999</span>
+              <span class="m-lbl">Flat Institutional Hardware</span>
+            </div>
+            <div class="ind-metric-card">
+              <span class="m-val">₹0</span>
+              <span class="m-lbl">Monthly Cloud API Fees</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ind-sidebar-col">
+          <div class="ind-specs-card">
+            <h4>Recommended University Fleet Spec</h4>
+            <div class="spec-kv-row">
+              <span>Primary Compute:</span>
+              <strong>Raspberry Pi 3 Compute Core</strong>
+            </div>
+            <div class="spec-kv-row">
+              <span>Perception:</span>
+              <strong>15 FPS OpenCV + 4× Sonar TTC &lt; 0.5s</strong>
+            </div>
+            <div class="spec-kv-row">
+              <span>Cargo Vault:</span>
+              <strong>Dual Solenoid PIN Vault (15 kg max)</strong>
+            </div>
+            <div class="spec-kv-row">
+              <span>Guidance:</span>
+              <strong>Centroid Paved Guidelines + ArUco Tags</strong>
+            </div>
+            <div class="spec-kv-row">
+              <span>Recommended Units:</span>
+              <strong>2 to 4 Rovers per 10,000 Students</strong>
+            </div>
+            <div style="margin-top: 20px;">
+              <a href="buy.html" class="btn btn-primary btn-full">Order Fleet for Campus &rarr;</a>
+              <a href="contact.html" class="btn btn-secondary btn-full" style="margin-top: 8px;">Schedule On-Campus Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PANEL 2: HEALTHCARE & HOSPITAL NETWORKS -->
+    <article class="industry-detail-card" id="sec-healthcare">
+      <div class="ind-card-header">
+        <div class="ind-badge-wrap">
+          <span class="ind-pill-tag">Sterile &amp; Time-Critical</span>
+          <h2>Healthcare &amp; Hospital Networks</h2>
+        </div>
+        <span class="ind-stat-badge">Zero Contamination • 24/7 Stat Sample Transport</span>
+      </div>
+
+      <div class="ind-grid-layout">
+        <div class="ind-content-col">
+          <div class="ind-block">
+            <h3 class="ind-subhead">
+              <span class="ind-icon-num">!</span>
+              The Problem in Multi-Block Hospital Facilities
+            </h3>
+            <p>
+              In large multi-specialty hospitals, healthcare workers and ward orderlies walk up to <strong>8–12 kilometers per shift</strong> manually carrying blood samples, urine culture vials, emergency pathology reports, prescription medications, and sterile instruments between outpatient clinics, testing labs, and ICUs.
+            </p>
+            <p>
+              Human courier handoffs in healthcare settings create severe friction: delayed stat test turnaround times, elevated staff physical fatigue, and risk of accidental exposure to infectious pathogens.
+            </p>
+          </div>
+
+          <div class="ind-block">
+            <h3 class="ind-subhead">
+              <span class="ind-icon-num">&#10003;</span>
+              How CAMPUSBOT Solves This in Healthcare
+            </h3>
+            <ul class="ind-step-list">
+              <li>
+                <strong>1. Contactless Intra-Facility Transport:</strong> Clean, UV-sterilizable cargo chamber protects sensitive diagnostic specimens and sterile supplies from airborne pathogen exposure.
+              </li>
+              <li>
+                <strong>2. Sub-0.5s Sonar Safety Around Patients:</strong> 4× ultrasonic Time-to-Collision sensors dynamically detect hospital stretchers, wheelchairs, doctors, and visitors, smoothly coming to a complete stop within 0.5s.
+              </li>
+              <li>
+                <strong>3. Chain of Custody Protocol:</strong> Only certified head nurses and lab technicians possess the cryptographic one-time authentication code to unlock the medication or blood transport vault.
+              </li>
+              <li>
+                <strong>4. Night-Shift Uninterrupted Service:</strong> Operates 24 hours a day without human fatigue, ensuring 2:00 AM emergency stat labs arrive in testing units without waiting for available ward staff.
+              </li>
+            </ul>
+          </div>
+
+          <div class="ind-metrics-row">
+            <div class="ind-metric-card">
+              <span class="m-val">70%</span>
+              <span class="m-lbl">Faster Stat Sample Turnaround</span>
+            </div>
+            <div class="ind-metric-card">
+              <span class="m-val">0</span>
+              <span class="m-lbl">Pathogen Contamination Exposure</span>
+            </div>
+            <div class="ind-metric-card">
+              <span class="m-val">100%</span>
+              <span class="m-lbl">Cryptographic Chain-of-Custody</span>
+            </div>
+            <div class="ind-metric-card">
+              <span class="m-val">24/7</span>
+              <span class="m-lbl">Continuous Operation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ind-sidebar-col">
+          <div class="ind-specs-card">
+            <h4>Healthcare Facility Configuration</h4>
+            <div class="spec-kv-row">
+              <span>Safety Priority:</span>
+              <strong>Ultra-responsive TTC &lt; 0.5s Sonar Pods</strong>
+            </div>
+            <div class="spec-kv-row">
+              <span>Sanitation:</span>
+              <strong>Smooth wipe-down UV-safe chamber</strong>
+            </div>
+            <div class="spec-kv-row">
+              <span>Speed:</span>
+              <strong>0.8 m/s smooth corridor gait</strong>
+            </div>
+            <div class="spec-kv-row">
+              <span>Hardware Cutoff:</span>
+              <strong>High-visibility Emergency E-Stop button</strong>
+            </div>
+            <div class="spec-kv-row">
+              <span>Unit Price:</span>
+              <strong>₹24,999 base + ₹2,000 smart charger</strong>
+            </div>
+            <div style="margin-top: 20px;">
+              <a href="buy.html" class="btn btn-primary btn-full">Procure Hospital Fleet &rarr;</a>
+              <a href="contact.html" class="btn btn-secondary btn-full" style="margin-top: 8px;">Request Clinical Pilot Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PANEL 3: LARGE INDUSTRIAL CAMPUSES -->
+    <article class="industry-detail-card" id="sec-industrial">
+      <div class="ind-card-header">
+        <div class="ind-badge-wrap">
+          <span class="ind-pill-tag">Heavy Manufacturing &amp; IT Parks</span>
+          <h2>Large Industrial Campuses</h2>
+        </div>
+        <span class="ind-stat-badge">Internal Tooling &amp; Parts Logistics • Predictable Timetables</span>
+      </div>
+
+      <div class="ind-grid-layout">
+        <div class="ind-content-col">
+          <div class="ind-block">
+            <h3 class="ind-subhead">
+              <span class="ind-icon-num">!</span>
+              The Problem in Sprawling Industrial Facilities
+            </h3>
+            <p>
+              Automotive assembly bays, aerospace manufacturing complexes, and multi-acre corporate technology parks require continuous physical movement of <strong>calibration gauges, replacement drill bits, PCB trays, and internal documentation</strong> between fabrication shops and central warehouses.
+            </p>
+            <p>
+              Paying trained technicians or human couriers to push carts across sprawling paved tarmac corridors wastes valuable engineering hours and creates unpredictable production downtime.
+            </p>
+          </div>
+
+          <div class="ind-block">
+            <h3 class="ind-subhead">
+              <span class="ind-icon-num">&#10003;</span>
+              How CAMPUSBOT Solves This in Industry
+            </h3>
+            <ul class="ind-step-list">
+              <li>
+                <strong>1. Scheduled Parts Shuttles:</strong> CAMPUSBOT runs continuous fixed-interval shuttles along warehouse and assembly corridors, delivering parts just-in-time (JIT).
+              </li>
+              <li>
+                <strong>2. 15 kg Payload Capacity:</strong> Dual high-torque geared DC motors and heavy-duty chassis reliably transport heavy components and industrial toolboxes.
+              </li>
+              <li>
+                <strong>3. Deterministic Optical Guidance:</strong> Operates entirely without GPS reception inside steel-framed industrial buildings or sheltered covered walkways.
+              </li>
+              <li>
+                <strong>4. Instant Hardware E-Stop Cutoff:</strong> Industrial-grade physical safety mushroom switch guarantees compliance with workplace safety standards.
+              </li>
+            </ul>
+          </div>
+
+          <div class="ind-metrics-row">
+            <div class="ind-metric-card">
+              <span class="m-val">85%</span>
+              <span class="m-lbl">Messenger Labor Cost Reduction</span>
+            </div>
+            <div class="ind-metric-card">
+              <span class="m-val">15 kg</span>
+              <span class="m-lbl">Continuous Payload Rating</span>
+            </div>
+            <div class="ind-metric-card">
+              <span class="m-val">0 GPS</span>
+              <span class="m-lbl">Zero Satellite RTK Dependency</span>
+            </div>
+            <div class="ind-metric-card">
+              <span class="m-val">6+ hrs</span>
+              <span class="m-lbl">Li-ion Continuous Run-Time</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ind-sidebar-col">
+          <div class="ind-specs-card">
+            <h4>Industrial Campus Configuration</h4>
+            <div class="spec-kv-row">
+              <span>Drive:</span>
+              <strong>Dual High-Torque Geared DC + L298N</strong>
+            </div>
+            <div class="spec-kv-row">
+              <span>Safety:</span>
+              <strong>Hardware E-Stop + 4× Sonar Obstacle Array</strong>
+            </div>
+            <div class="spec-kv-row">
+              <span>Guidance:</span>
+              <strong>Paved Corridor Centroid + ArUco Stop Benches</strong>
+            </div>
+            <div class="spec-kv-row">
+              <span>Battery:</span>
+              <strong>12V Li-ion with Smart Fast-Charger Auto Shutoff</strong>
+            </div>
+            <div class="spec-kv-row">
+              <span>Unit Rate:</span>
+              <strong>₹24,999 / Rover</strong>
+            </div>
+            <div style="margin-top: 20px;">
+              <a href="buy.html" class="btn btn-primary btn-full">Order Industrial Fleet &rarr;</a>
+              <a href="contact.html" class="btn btn-secondary btn-full" style="margin-top: 8px;">Schedule On-Site Plant Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PANEL 4: LAST-MILE PARCEL DELIVERY & COURIER HUBS -->
+    <article class="industry-detail-card" id="sec-parcel">
+      <div class="ind-card-header">
+        <div class="ind-badge-wrap">
+          <span class="ind-pill-tag">Logistics &amp; Courier Supply Chain</span>
+          <h2>Parcel Delivery</h2>
+        </div>
+        <span class="ind-stat-badge">Solving the Last 500-Meter Delivery Cost Bottleneck</span>
+      </div>
+
+      <div class="ind-grid-layout">
+        <div class="ind-content-col">
+          <div class="ind-block">
+            <h3 class="ind-subhead">
+              <span class="ind-icon-num">!</span>
+              The Problem in Last-Mile Logistics
+            </h3>
+            <p>
+              In courier supply chains (Amazon, Flipkart, BlueDart, Delhivery, DTDC), the <strong>"Last 500 Meters" accounts for over 53% of the total shipping cost</strong>. Couriers lose 15–25 minutes at every gated campus or high-density institution attempting to contact customers, wait at barriers, and locate individual apartments or hostel rooms.
+            </p>
+            <p>
+              Failed delivery attempts, re-delivery fuel costs, and vehicle congestion at gates make institutional delivery operations inefficient and unprofitable.
+            </p>
+          </div>
+
+          <div class="ind-block">
+            <h3 class="ind-subhead">
+              <span class="ind-icon-num">&#10003;</span>
+              How CAMPUSBOT Solves Last-Mile Courier Chaos
+            </h3>
+            <ul class="ind-step-list">
+              <li>
+                <strong>1. 3-Minute Gate Turnaround:</strong> Delivery couriers drop off all consignments for the entire facility at a centralized gate dock in under 3 minutes, then immediately continue their delivery route.
+              </li>
+              <li>
+                <strong>2. Automated Batch Distribution:</strong> CampusBot rovers automatically ferry parcels to designated station lockers inside the complex following pre-mapped optical pathways.
+              </li>
+              <li>
+                <strong>3. Automated Customer Notification:</strong> Recipient receives an automated web/SMS OTP notification the moment their parcel is en route, with live countdown arrival tracking.
+              </li>
+              <li>
+                <strong>4. Zero Redeliveries:</strong> Parcels stay safely locked in the dual-solenoid chamber until picked up with the correct one-time PIN.
+              </li>
+            </ul>
+          </div>
+
+          <div class="ind-metrics-row">
+            <div class="ind-metric-card">
+              <span class="m-val">3 min</span>
+              <span class="m-lbl">Courier Gate Turnaround Time</span>
+            </div>
+            <div class="ind-metric-card">
+              <span class="m-val">0%</span>
+              <span class="m-lbl">Failed First-Attempt Deliveries</span>
+            </div>
+            <div class="ind-metric-card">
+              <span class="m-val">53%</span>
+              <span class="m-lbl">Last-500m Cost Reduction</span>
+            </div>
+            <div class="ind-metric-card">
+              <span class="m-val">100%</span>
+              <span class="m-lbl">Automated Tracking Visibility</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ind-sidebar-col">
+          <div class="ind-specs-card">
+            <h4>Logistics Hub Configuration</h4>
+            <div class="spec-kv-row">
+              <span>Intake Mode:</span>
+              <strong>Rapid Touchscreen Courier Handover</strong>
+            </div>
+            <div class="spec-kv-row">
+              <span>Security:</span>
+              <strong>Dual Solenoid High-Tensile Electromagnetic Lock</strong>
+            </div>
+            <div class="spec-kv-row">
+              <span>Speed:</span>
+              <strong>1.2 m/s Autonomous Ground Gait</strong>
+            </div>
+            <div class="spec-kv-row">
+              <span>Customer Verification:</span>
+              <strong>One-Time PIN Authentication</strong>
+            </div>
+            <div class="spec-kv-row">
+              <span>Fleet Pricing:</span>
+              <strong>₹24,999 / Rover Unit</strong>
+            </div>
+            <div style="margin-top: 20px;">
+              <a href="buy.html" class="btn btn-primary btn-full">Order Logistics Rovers &rarr;</a>
+              <a href="track.html" class="btn btn-secondary btn-full" style="margin-top: 8px;">Test Live Consignment Tracking</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- ═══════ SECTOR COMPARISON MATRIX ═══════ -->
+  <section class="content-section" style="padding: 70px 0; background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header-centered">
+        <span class="section-tag-pill">Cross-Sector Matrix</span>
+        <h2 class="section-headline">Feature Comparison Across Industries</h2>
+        <p class="section-subheadline">Every CAMPUSBOT unit comes equipped with all perception, guidance, and security layers standard at ₹24,999.</p>
+      </div>
+
+      <div class="table-responsive-wrapper" style="overflow-x: auto; margin-top: 30px;">
+        <table class="comparison-table" style="width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden;">
+          <thead>
+            <tr style="background: #F1F5F9; border-bottom: 2px solid var(--border); text-align: left;">
+              <th style="padding: 16px 20px; font-family: var(--font-heading); color: var(--text);">Operational Capability</th>
+              <th style="padding: 16px 20px; font-family: var(--font-heading); color: var(--primary);">Colleges &amp; Universities</th>
+              <th style="padding: 16px 20px; font-family: var(--font-heading); color: var(--text);">Healthcare</th>
+              <th style="padding: 16px 20px; font-family: var(--font-heading); color: var(--text);">Large Industrial</th>
+              <th style="padding: 16px 20px; font-family: var(--font-heading); color: var(--text);">Parcel Delivery</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 14px 20px; font-weight: 700;">Primary Transit Route</td>
+              <td style="padding: 14px 20px;">Gate 1 &rarr; Hostel Block Stations</td>
+              <td style="padding: 14px 20px;">OPD &rarr; Pathology Lab &rarr; ICU</td>
+              <td style="padding: 14px 20px;">Warehouse &rarr; Assembly Bays</td>
+              <td style="padding: 14px 20px;">Main Security Dock &rarr; Cluster Hubs</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 14px 20px; font-weight: 700;">Payload Items</td>
+              <td style="padding: 14px 20px;">E-commerce packages, books, food</td>
+              <td style="padding: 14px 20px;">Blood vials, stat labs, pharmaceuticals</td>
+              <td style="padding: 14px 20px;">Tooling, calibration gauges, PCB trays</td>
+              <td style="padding: 14px 20px;">Parcels, envelopes, courier cartons</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 14px 20px; font-weight: 700;">Security Mechanism</td>
+              <td style="padding: 14px 20px;">Dual Solenoid OTP (Student SMS PIN)</td>
+              <td style="padding: 14px 20px;">Authorized Staff Cryptographic PIN</td>
+              <td style="padding: 14px 20px;">Bay Supervisor PIN Auth</td>
+              <td style="padding: 14px 20px;">One-Time Customer Pickup PIN</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 14px 20px; font-weight: 700;">Safety Protocol</td>
+              <td style="padding: 14px 20px;">4× Ultrasonic TTC &lt; 0.5s Braking</td>
+              <td style="padding: 14px 20px;">Stretcher &amp; Patient Collision Avoidance</td>
+              <td style="padding: 14px 20px;">Mushroom E-Stop Switch Cutoff</td>
+              <td style="padding: 14px 20px;">Pedestrian Walkway Priority Stop</td>
+            </tr>
+            <tr>
+              <td style="padding: 14px 20px; font-weight: 700;">Unit Procurement Cost</td>
+              <td style="padding: 14px 20px; font-weight: 800; color: var(--primary);">₹24,999 INR</td>
+              <td style="padding: 14px 20px; font-weight: 800; color: var(--primary);">₹24,999 INR</td>
+              <td style="padding: 14px 20px; font-weight: 800; color: var(--primary);">₹24,999 INR</td>
+              <td style="padding: 14px 20px; font-weight: 800; color: var(--primary);">₹24,999 INR</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CALL TO ACTION BANNER ═══════ -->
+  <section class="content-section" style="padding: 70px 0 90px;">
+    <div class="container">
+      <div style="background: var(--surface); border: 1.5px solid var(--border); border-radius: var(--radius-xl); padding: 50px; text-align: center; max-width: 900px; margin: 0 auto; box-shadow: var(--shadow-lg);">
+        <span class="section-tag-pill">Direct Institutional Procurement</span>
+        <h2 style="font-family: var(--font-heading); font-size: 2.2rem; color: var(--text); font-weight: 900; margin: 16px 0;">
+          Deploy CAMPUSBOT for Your Facility
+        </h2>
+        <p style="font-size: 1.05rem; color: var(--muted); max-width: 600px; margin: 0 auto 30px; line-height: 1.6;">
+          Fixed ₹24,999 rate with zero recurring software fees. Optional 12V docking fast-chargers available at ₹2,000 each. Instant payment via UPI QR, Cards, or Global Educational Grants.
+        </p>
+        <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+          <a href="buy.html" class="btn btn-primary btn-xl">Configure &amp; Buy Rovers &rarr;</a>
+          <a href="contact.html" class="btn btn-secondary btn-xl">Contact Engineering Team</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo footer-logo">
+            <div class="brand-symbol">
+              <img src="assets/logo.png" alt="CAMPUSBOT Logo" class="brand-logo-img">
+            </div>
+            <span class="brand-name">CAMPUSBOT</span>
+          </a>
+          <p class="footer-bio">
+            CAMPUSBOT autonomous mobile delivery rovers engineered at Nitte Meenakshi Institute of Technology (NMIT), Bengaluru. Empowering higher education campuses and facilities with secure last-mile logistics.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="industries.html">Industries We Serve</a></li>
+            <li><a href="technology.html">Technology &amp; Architecture</a></li>
+            <li><a href="about.html">About &amp; Founders</a></li>
+            <li><a href="track.html">Track Order</a></li>
+            <li><a href="buy.html">Buy Now</a></li>
+            <li><a href="contact.html">Contact &amp; Demo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Industries</h4>
+          <ul class="footer-links-list">
+            <li><a href="industries.html?industry=colleges">Colleges &amp; Universities</a></li>
+            <li><a href="industries.html?industry=healthcare">Healthcare Facilities</a></li>
+            <li><a href="industries.html?industry=industrial">Large Industrial Campuses</a></li>
+            <li><a href="industries.html?industry=parcel">Last-Mile Parcel Delivery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4 class="footer-col-title">Direct Inquiries</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+917411054974">+91 7411054974</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:akashsaud22@gmail.com">akashsaud22@gmail.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>NMIT Campus, Yelahanka, Bengaluru 560064</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 CAMPUSBOT Autonomous Robotics. Built for real-world campus mobility.</p>
+        <div class="footer-legal-links">
+          <a href="technology.html">3-Tier Physical AI</a>
+          <a href="buy.html">Pricing Policy</a>
+          <a href="contact.html">Campus Pilot Program</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=3.0"></script>
+</body>
+</html>

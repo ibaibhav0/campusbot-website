@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Order | CAMPUSBOT — Autonomous Campus Delivery Robots</title>
+  <meta name="description" content="Track your CAMPUSBOT fleet delivery in real-time. Check estimated transit duration, courier milestones, and deployment progress.">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="style.css?v=3.0">
+</head>
+<body>
+
+  <!-- ═══════ NAVBAR ═══════ -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="CAMPUSBOT Home">
+        <div class="brand-symbol">
+          <img src="assets/logo.png" alt="CAMPUSBOT Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">CAMPUSBOT</span>
+          <span class="brand-sub">Autonomous Robotics</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="nav-dropdown-item">
+            <a href="industries.html" class="nav-dropdown-toggle">
+              Industries We Serve
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+            </a>
+            <div class="nav-submenu">
+              <a href="industries.html?industry=colleges">Colleges &amp; Universities</a>
+              <a href="industries.html?industry=healthcare">Healthcare</a>
+              <a href="industries.html?industry=industrial">Large Industrial Campuses</a>
+              <a href="industries.html?industry=parcel">Parcel Delivery</a>
+            </div>
+          </li>
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="track.html" class="active">Track Order</a></li>
+          <li><a href="buy.html">Buy Now</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+        <a href="buy.html" class="btn btn-primary btn-nav">Buy CAMPUSBOT</a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════ PAGE HERO ═══════ -->
+  <section class="page-hero-section">
+    <div class="container page-hero-content">
+      <span class="section-tag-pill">Fleet Logistics &amp; Telemetry</span>
+      <h1 class="page-hero-title">Live CAMPUSBOT Order Tracking</h1>
+      <p class="page-hero-lead">
+        Monitor your institution's rover build, quality assurance calibration, freight transit status, and estimated on-campus arrival.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════ TRACKING SEARCH CONTAINER ═══════ -->
+  <div class="container">
+    <!-- Real Field Metrics Counter Strip -->
+    <div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 30px; flex-wrap: wrap;">
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 14px 24px; text-align: center; box-shadow: var(--shadow-sm); min-width: 160px;">
+        <span style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 900; color: var(--primary); display: block;">200+</span>
+        <span style="font-size: 0.78rem; font-weight: 700; color: var(--muted); text-transform: uppercase;">Daily Gate Parcels</span>
+      </div>
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 14px 24px; text-align: center; box-shadow: var(--shadow-sm); min-width: 160px;">
+        <span style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 900; color: var(--success); display: block;">142</span>
+        <span style="font-size: 0.78rem; font-weight: 700; color: var(--muted); text-transform: uppercase;">Parcels Delivered</span>
+      </div>
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 14px 24px; text-align: center; box-shadow: var(--shadow-sm); min-width: 160px;">
+        <span style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 900; color: var(--text); display: block;">3</span>
+        <span style="font-size: 0.78rem; font-weight: 700; color: var(--muted); text-transform: uppercase;">Total Orders Placed</span>
+      </div>
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 14px 24px; text-align: center; box-shadow: var(--shadow-sm); min-width: 160px;">
+        <span style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 900; color: var(--accent); display: block;">20–30m</span>
+        <span style="font-size: 0.78rem; font-weight: 700; color: var(--muted); text-transform: uppercase;">Walk Saved / Student</span>
+      </div>
+    </div>
+
+    <div class="track-search-card">
+      <h3 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text); font-weight: 800;">
+        Look Up Campus Delivery Parcel or Fleet Purchase Order
+      </h3>
+      <p style="font-size: 0.85rem; color: var(--muted); margin-top: 4px;">
+        Track live student parcels in transit from campus gate to hostels (e.g. <code style="color: var(--primary);">PARCEL-NMIT-8492</code>) or institutional hardware purchase orders (e.g. <code style="color: var(--primary);">CB-PO-NMIT-01</code>).
+      </p>
+
+      <form class="track-form" id="trackSearchForm">
+        <div class="track-input-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="trackInput" placeholder="e.g. PARCEL-NMIT-8492 or CB-PO-NMIT-01" value="PARCEL-NMIT-8492" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-xl">Track Status</button>
+      </form>
+
+      <div class="sample-orders-row">
+        <span class="sample-label">Real Active Consignments &amp; Orders:</span>
+        <button type="button" class="sample-btn" data-po="PARCEL-NMIT-8492">PARCEL-NMIT-8492 (Gate-to-Hostel Live)</button>
+        <button type="button" class="sample-btn" data-po="PARCEL-RUAS-1024">PARCEL-RUAS-1024 (Arrived at Station 2)</button>
+        <button type="button" class="sample-btn" data-po="CB-PO-NMIT-01">CB-PO-NMIT-01 (NMIT Fleet Pilot Active)</button>
+        <button type="button" class="sample-btn" data-po="CB-PO-RUAS-02">CB-PO-RUAS-02 (RUAS Hacktivate Unit)</button>
+      </div>
+    </div>
+
+    <!-- ═══════ LIVE TRACKING RESULTS PANEL ═══════ -->
+    <div class="tracking-result-panel" id="trackResultPanel">
+      <div class="track-result-header">
+        <div class="track-id-group">
+          <span class="track-po-label">INSTITUTIONAL PURCHASE ORDER</span>
+          <span class="track-po-number" id="dispPoNumber">CB-PO-2026-8492</span>
+          <span style="font-size: 0.85rem; color: var(--muted);" id="dispInstitution">Indian Institute of Technology, Delhi Campus</span>
+        </div>
+        <div class="track-status-badge status-in-transit" id="dispStatusBadge">
+          <span class="pulse-dot"></span>
+          <span id="dispStatusText">IN TRANSIT (HEAVY FREIGHT)</span>
+        </div>
+      </div>
+
+      <!-- ETA Metrics Banner -->
+      <div class="track-eta-banner">
+        <div class="eta-metric">
+          <span class="eta-metric-k">ESTIMATED TIME TO ARRIVAL</span>
+          <span class="eta-metric-v eta-countdown" id="dispEtaDuration">2 Days, 14 Hours</span>
+        </div>
+        <div class="eta-metric">
+          <span class="eta-metric-k">EXPECTED CAMPUS DELIVERY</span>
+          <span class="eta-metric-v" id="dispEtaDate">October 18, 2026 (11:00 AM)</span>
+        </div>
+        <div class="eta-metric">
+          <span class="eta-metric-k">CURRENT LOGISTICS LOCATION</span>
+          <span class="eta-metric-v" id="dispCurrentLocation">Delhi South Logistics Hub</span>
+        </div>
+      </div>
+
+      <!-- Timeline Stepper -->
+      <div class="tracking-timeline-body">
+        <h4 style="font-family: var(--font-heading); font-size: 1rem; color: var(--text); font-weight: 800; margin-bottom: 8px;">
+          Milestone Progression
+        </h4>
+        <p style="font-size: 0.82rem; color: var(--muted);">
+          Each CAMPUSBOT unit undergoes full computer vision and sonar validation prior to heavy carrier dispatch.
+        </p>
+
+        <div class="stepper-progress-wrap">
+          <div class="stepper-line-back">
+            <div class="stepper-line-fill" id="dispStepperFill" style="width: 75%;"></div>
+          </div>
+
+          <div class="stepper-steps-row">
+            <div class="stepper-step completed" id="step1">
+              <div class="step-marker">&#10003;</div>
+              <span class="step-title">Order Verified</span>
+              <span class="step-meta" id="step1Date">12 Oct • Paid</span>
+            </div>
+            <div class="stepper-step completed" id="step2">
+              <div class="step-marker">&#10003;</div>
+              <span class="step-title">Chassis Assembly</span>
+              <span class="step-meta" id="step2Date">13 Oct • NMIT Lab</span>
+            </div>
+            <div class="stepper-step completed" id="step3">
+              <div class="step-marker">&#10003;</div>
+              <span class="step-title">15 FPS Vision QA</span>
+              <span class="step-meta" id="step3Date">14 Oct • Calibrated</span>
+            </div>
+            <div class="stepper-step current" id="step4">
+              <div class="step-marker">4</div>
+              <span class="step-title">Carrier Transit</span>
+              <span class="step-meta" id="step4Date">Active • In Flight</span>
+            </div>
+            <div class="stepper-step" id="step5">
+              <div class="step-marker">5</div>
+              <span class="step-title">Campus Handover</span>
+              <span class="step-meta" id="step5Date">Pending • Oct 18</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical & Package Specifications -->
+        <div class="track-specs-grid">
+          <div class="track-spec-card">
+            <h4>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+              Consignment &amp; Freight Details
+            </h4>
+            <div class="spec-key-value-list">
+              <div class="spec-kv-row">
+                <span>Freight Transporter:</span>
+                <strong id="dispCarrier">BlueDart Express Heavy Logistics</strong>
+              </div>
+              <div class="spec-kv-row">
+                <span>Waybill / AWB Number:</span>
+                <strong id="dispAwb">BD-7491-0391-IN</strong>
+              </div>
+              <div class="spec-kv-row">
+                <span>Origin Hub:</span>
+                <span>NMIT Robotics HQ, Yelahanka, Bengaluru</span>
+              </div>
+              <div class="spec-kv-row">
+                <span>Destination Campus:</span>
+                <span id="dispDestAddress">Gate 1 Logistics Center, Main Campus</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="track-spec-card">
+            <h4>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Hardware Units in Shipment
+            </h4>
+            <div class="spec-key-value-list">
+              <div class="spec-kv-row">
+                <span>CAMPUSBOT Units:</span>
+                <strong id="dispUnitsCount">2 Units (₹49,998)</strong>
+              </div>
+              <div class="spec-kv-row">
+                <span>12V Docking Fast Chargers:</span>
+                <strong id="dispChargersCount">2 Units @ ₹2,000 (₹4,000)</strong>
+              </div>
+              <div class="spec-kv-row">
+                <span>Livery Finish:</span>
+                <span id="dispLivery">Arctic White &amp; Cyber Orange</span>
+              </div>
+              <div class="spec-kv-row">
+                <span>Pre-flashed OS:</span>
+                <span>CampusBot OS v2.4 (OpenCV + ArUco Driver)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Help & Direct Support -->
+        <div style="margin-top: 24px; padding: 18px 24px; background: #F8FAFC; border: 1px solid var(--border); border-radius: var(--radius-sm); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <strong style="color: var(--text); font-size: 0.9rem; display: block;">Need Freight or Waypoint Assistance?</strong>
+            <span style="font-size: 0.8rem; color: var(--muted);">Direct line to CAMPUSBOT dispatch operations at NMIT Bengaluru.</span>
+          </div>
+          <div style="display: flex; gap: 12px;">
+            <a href="tel:+917411054974" class="btn btn-secondary btn-nav">Call: +91 7411054974</a>
+            <a href="mailto:akashsaud22@gmail.com" class="btn btn-primary btn-nav">Email Dispatch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo footer-logo">
+            <div class="brand-symbol">
+              <img src="assets/logo.png" alt="CAMPUSBOT Logo" class="brand-logo-img">
+            </div>
+            <span class="brand-name">CAMPUSBOT</span>
+          </a>
+          <p class="footer-bio">
+            CAMPUSBOT autonomous mobile delivery rovers engineered at Nitte Meenakshi Institute of Technology (NMIT), Bengaluru. Empowering higher education campuses with secure gate-to-hostel parcel logistics.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="industries.html">Industries We Serve</a></li>
+            <li><a href="technology.html">Technology &amp; Vision</a></li>
+            <li><a href="about.html">About Leadership Team</a></li>
+            <li><a href="track.html">Track Existing Order</a></li>
+            <li><a href="buy.html">Institutional Procurement</a></li>
+            <li><a href="contact.html">Campus HQ Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Contact Operations</h4>
+          <ul class="footer-links-list">
+            <li><a href="tel:+917411054974">+91 7411054974</a></li>
+            <li><a href="mailto:akashsaud22@gmail.com">akashsaud22@gmail.com</a></li>
+            <li><a href="mailto:ibaibhavkumar8467@gmail.com">ibaibhavkumar8467@gmail.com</a></li>
+            <li><span>NMIT Campus, Yelahanka, Bengaluru - 560064</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 CAMPUSBOT — All Rights Reserved. Clean Modern Design System.</span>
+        <span>Flat ₹24,999 / Rover Unit • ₹2,000 / Docking Fast Charger</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=3.0"></script>
+</body>
+</html>
